@@ -35,11 +35,7 @@ Ext.define('BintoTouch.view.Main', {
                     {
                         xtype: 'button',
                         text: 'Random',
-                        listeners: {
-                            tap: function() {
-                                console.log('You tapped me');
-                            }
-                        }
+                        id: 'randomButton'
                     }
                 ]
             },

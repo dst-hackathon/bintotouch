@@ -27,12 +27,16 @@ Ext.application({
     ],
 
     controllers: [
-        'Food'
+        'Foods'
     ],
 
     views: [
         'Main',
         'Result'
+    ],
+
+    models: [
+        'Food'
     ],
 
     icon: {
