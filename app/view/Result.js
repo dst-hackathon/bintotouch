@@ -2,18 +2,24 @@ Ext.define('BintoTouch.view.Result', {
     extend: 'Ext.Container',
     xtype: 'result',
     config: {
+        layout: {
+            type: 'vbox',
+            align: 'center'
+        },
+
        	items: [
         {
-            html: "First Item"
+            html: "Place",
+
         },
         {
-            html: "Second Item"
+            html: "Price",
         },
         {
-            html: "Third Item"
-        },
-        {
-            html: "Fourth Item"
+            xtype: 'image',
+            src: 'resources/images/food.jpg',
+            mode: 'image',
+            height: 400
         }
     ]
     }
