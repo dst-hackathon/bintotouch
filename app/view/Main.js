@@ -12,7 +12,7 @@ Ext.define('BintoTouch.view.Main', {
         items: [
             {
                 title: 'Search',
-                iconCls: 'home',
+                iconCls: 'search',
 
                 styleHtmlContent: true,
                 scrollable: true,
@@ -34,7 +34,7 @@ Ext.define('BintoTouch.view.Main', {
             },
             {
                 title: 'Add',
-                iconCls: 'action',
+                iconCls: 'add',
 
                 items: [
                     {
