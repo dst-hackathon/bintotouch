@@ -31,7 +31,8 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'Result'
     ],
 
     icon: {
