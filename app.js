@@ -26,6 +26,10 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
+    controllers: [
+        'Food'
+    ],
+
     views: [
         'Main'
     ],
