@@ -16,6 +16,12 @@ Ext.define('BintoTouch.view.Main', {
 
                 styleHtmlContent: true,
                 scrollable: true,
+                layout: {
+                    type:'vbox',
+                    pack: 'start',
+                    align: 'center',
+                },
+
 
                 items: [
                     {
@@ -29,6 +35,7 @@ Ext.define('BintoTouch.view.Main', {
                     {
                         xtype: 'button',
                         text: 'Random'
+                        
                     }
                 ]
             },
