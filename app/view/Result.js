@@ -4,7 +4,9 @@ Ext.define('BintoTouch.view.Result', {
     config: {
        	items: [
         {
-            html: "First Item"
+            xtype: 'image',
+            src: 'resources/images/food.jpg',
+            mode: 'image'
         },
         {
             html: "Second Item"
