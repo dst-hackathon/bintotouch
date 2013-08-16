@@ -3,7 +3,8 @@ Ext.define('BintoTouch.view.Main', {
     xtype: 'main',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.Video',
+        'BintoTouch.view.Result'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -21,6 +22,9 @@ Ext.define('BintoTouch.view.Main', {
                         docked: 'top',
                         xtype: 'titlebar',
                         title: 'Binto'
+                    },
+                    {
+                        xtype: 'result'
                     },
                     {
                         xtype: 'button',
