@@ -22,19 +22,10 @@ Ext.define('BintoTouch.view.Result', {
             {
                 xtype: 'panel',
                 id: 'foodDetails',
-                layout: 'hbox',
-                items: [
-                    {
-                        html: "Restaurant",
-                        margin: 2,
-                        cls: 'resName'
-                    },
-                    {
-                        html: "Price",
-                        margin: 2,
-                        cls: 'resName'
-                    }
-                ]
+                layout: {
+                    type: 'vbox',
+                    align: 'center'
+                }
             }
         ]
     }

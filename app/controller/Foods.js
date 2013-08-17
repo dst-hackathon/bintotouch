@@ -34,14 +34,24 @@ Ext.define('BintoTouch.controller.Foods', {
             callback: function(records, operation, success) {
                 var url = "http://binto.codedeck.com" + store.getAt(0).getData().image_code.url;
                 console.log('url', url);
-                // this.getFoodDetails().items.get(0)._html = 'haaaaaaaaaaaa';
-                // console.log('panel', this.getFoodDetails().items.get(0)._html);
+                var resName = store.getAt(0).getData().name;
+                var price = store.getAt(0).getData().price;
+                
                 this.getFoodImage().removeAll();
                 this.getFoodImage().add({
                     xtype: 'image',
                     src: url,
                     mode: 'image',
                     width: '100%'
+                });
+
+                this.getFoodDetails().removeAll();
+                this.getFoodDetails().add({
+                    html: '<b>Restaurant : <b>' + resName,
+                    cls: 'resName'
+                },{
+                    html: '<b>Price : <b>' + price,
+                    cls: 'resName'
                 });
                 
             },
