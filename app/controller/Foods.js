@@ -56,7 +56,7 @@ Ext.define('BintoTouch.controller.Foods', {
                 });
 
                 this.getFoodDetails().removeAll();
-                this.getFoodDetails().add({
+                this.getFoodDetails().add([{
                     html: '<b>Dish name : ' + Ext.String.htmlEncode(dish),
                     cls: 'dishStyle'
                 },{
@@ -65,7 +65,7 @@ Ext.define('BintoTouch.controller.Foods', {
                 },{
                     html: '<b>Restaurant : ' + Ext.String.htmlEncode(resName),
                     cls: 'resStyle'
-                });
+                }]);
                 
             },
             scope: this
