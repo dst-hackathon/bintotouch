@@ -8,3 +8,16 @@
 
 // Examples of using the icon mixin:
 // @include icon('user');
+
+.randomBt{
+	margin: 0.75em 3em 0.75em 3em;
+	font-family:"Times New Roman",Times,serif;
+    font-size: 20px;
+}
+
+.resName{
+	font-family:"Times New Roman",Times,serif;
+	font-size: 20px;
+	text-align: 'center';
+	color: rgb(0, 82, 255);
+}

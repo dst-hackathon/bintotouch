@@ -34,8 +34,20 @@ Ext.define('BintoTouch.controller.Foods', {
             callback: function(records, operation, success) {
                 var url = "http://binto.codedeck.com" + store.getAt(0).getData().image_code;
                 console.log('url', url);
-                var resName = store.getAt(0).getData().name;
+                var resName = store.getAt(0).getData().restaurant_name;
+                var dish = store.getAt(0).getData().name;
                 var price = store.getAt(0).getData().price;
+                if (Ext.isEmpty(resName)){
+                    resName = ' ';
+                }
+                if (Ext.isEmpty(dish)){
+                    dish = ' ';
+                }
+                if (Ext.isEmpty(price)){
+                    price = ' ';
+                }else{
+                    price = price + ' <b>Baht';
+                }
                 
                 this.getFoodImage().removeAll();
                 this.getFoodImage().add({
@@ -47,10 +59,13 @@ Ext.define('BintoTouch.controller.Foods', {
 
                 this.getFoodDetails().removeAll();
                 this.getFoodDetails().add({
-                    html: '<b>Restaurant : <b>' + resName,
+                    html: '<b>Dish name :' + dish,
                     cls: 'resName'
                 },{
-                    html: '<b>Price : <b>' + price,
+                    html: '<b>Price : ' + price,
+                    cls: 'resName'
+                },{
+                    html: '<b>Restaurant :' + resName,
                     cls: 'resName'
                 });
                 

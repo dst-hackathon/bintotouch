@@ -21,16 +21,6 @@ Ext.define('BintoTouch.view.result.List', {
                         xtype: 'titlebar',
                         title: 'Binto'
                     },
-           //          {
-			        //     xtype: 'toolbar',
-			        //     docked: 'top',
-			        //     ui: 'light',
-			        //     items: [{
-			        //         xtype: 'searchfield',
-			        //         placeHolder: 'Search by keywords...',
-			        //         flex: 1
-			        //     }]
-			        // },
                     {
                         xtype: 'result',
                         id: 'resultPanel',
@@ -39,7 +29,7 @@ Ext.define('BintoTouch.view.result.List', {
                     {
                         docked: 'bottom',
                         xtype: 'button',
-                        text: 'Random',
+                        text: 'Suggest me!',
                         id: 'randomButton',
                         ui: 'confirm-round',
                         cls: 'randomBt'
