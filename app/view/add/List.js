@@ -16,7 +16,7 @@ Ext.define('BintoTouch.view.add.List', {
         scrollable: true,
         layout: {
 			type:'vbox',
-        	align: 'center'
+        	align: 'start'
         },
         items: [
         {
@@ -25,7 +25,7 @@ Ext.define('BintoTouch.view.add.List', {
             title: 'Binto'
         },{
 				xtype: 'fieldset',
-				width: 620,
+				width: '100%',
 				name: 'inputFields',
 				title: 'Add Information here....',
 				items:[
@@ -64,7 +64,7 @@ Ext.define('BintoTouch.view.add.List', {
 			            loadAsDataUrl: true,
 			            states: {
 			            	browse: {
-								text: 'Browse and load'
+								text: 'Browse'
 			                },
 			                ready: {
 			                	text: 'Load'
@@ -77,7 +77,7 @@ Ext.define('BintoTouch.view.add.List', {
 					},
 					{
 						xtype: 'button',
-						text: 'Upload Image',
+						text: 'Upload',
 						margin: '0 20'
 					}
 				]
