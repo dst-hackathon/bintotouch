@@ -7013,16 +7013,3 @@ body.x-desktop {
   background-image: linear-gradient(top, #bababa, #c7c7c7 10%, #d3d3d3 65%, #d5d5d5);
   color: black;
 }
-
-.randomBt{
-	margin: 0.75em 3em 0.75em 3em;
-	font-family:"Times New Roman",Times,serif;
-    font-size: 20px;
-}
-
-.resName{
-	font-family:"Times New Roman",Times,serif;
-	font-size: 20px;
-	text-align: 'center';
-	color: rgb(0, 82, 255);
-}
