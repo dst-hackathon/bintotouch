@@ -1,25 +1,46 @@
 Ext.define('BintoTouch.view.Result', {
-    extend: 'Ext.Container',
+    extend: 'Ext.Panel',
     xtype: 'result',
+    requires:[
+        'Ext.Img'
+    ],
+
     config: {
+
         layout: {
             type: 'vbox',
+            pack: 'center',
             align: 'center'
         },
 
-       	items: [
+        items: [
         {
-            html: "Place",
-
+            xtype: 'panel',
+            id: 'foodDetails',
+            
+            items: [
+            {
+                html: "Restaurant",
+                margin: 2
+            },
+            {
+                html: "Price",
+                margin: 2
+            }
+            ]
         },
         {
-            html: "Price",
-        },
-        {
-            xtype: 'image',
-            src: 'resources/images/food.jpg',
-            mode: 'image',
-            height: 400
+            xtype: 'panel',
+            id: 'foodImage',
+            
+            items: [
+            {
+                xtype: 'image',
+                src: 'resources/images/food.jpg',
+                mode: 'image',
+                width: '100%'
+            }
+            ] 
         }
     ]
     }
