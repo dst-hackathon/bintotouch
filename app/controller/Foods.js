@@ -9,7 +9,8 @@ Ext.define('BintoTouch.controller.Foods', {
         },
 
         refs: {
-            randomButton: '#randomButton'
+            randomButton: '#randomButton',
+            resultPanel: '#resultPanel'
         }
     },
 
@@ -19,5 +20,8 @@ Ext.define('BintoTouch.controller.Foods', {
 
     doRandom: function() {
     	console.log('Random');
+        this.getRandomButton().show({type :"slide",direction : "down", duration : 500});
+        this.getResultPanel().show({type :"slide",direction : "down", duration : 500});
+
     }
 });

@@ -8,7 +8,6 @@ Ext.define('BintoTouch.view.Main', {
     ],
     config: {
         tabBarPosition: 'bottom',
-
         items: [
             {
                 title: 'Search',
@@ -30,7 +29,9 @@ Ext.define('BintoTouch.view.Main', {
                         title: 'Binto'
                     },
                     {
-                        xtype: 'result'
+                        xtype: 'result',
+                        id: 'resultPanel',
+                        hidden: true
                     },
                     {
                         xtype: 'button',
