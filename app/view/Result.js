@@ -6,6 +6,8 @@ Ext.define('BintoTouch.view.Result', {
     ],
 
     config: {
+        itemId: 'resultView',
+        store: 'Foods',
 
         layout: {
             type: 'vbox',
@@ -36,7 +38,8 @@ Ext.define('BintoTouch.view.Result', {
             items: [
             {
                 xtype: 'image',
-                src: 'resources/images/food.jpg',
+                id: 'showImg',
+                src: '',
                 mode: 'image',
                 width: '100%'
             }

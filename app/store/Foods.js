@@ -4,8 +4,8 @@ Ext.define('BintoTouch.store.Foods', {
     config: {
         model: 'BintoTouch.model.Food',
         proxy: {
-            type: 'jsonp',
-            url : 'http://binto.codedeck.com/dishes/suggest.json'
+            type: 'ajax',
+            url : 'suggest.json'
         }
     },
 });

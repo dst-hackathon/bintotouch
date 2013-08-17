@@ -14,7 +14,9 @@ Ext.define('BintoTouch.controller.Foods', {
 
         refs: {
             randomButton: '#randomButton',
-            resultPanel: '#resultPanel'
+            resultPanel: '#resultPanel',
+            foodImg: '#showImg',
+            resultView: '#resultView'
         }
     },
 
@@ -27,7 +29,15 @@ Ext.define('BintoTouch.controller.Foods', {
         this.getRandomButton().show({type :"slide",direction : "down", duration : 500});
         this.getResultPanel().show({type :"slide",direction : "down", duration : 500});
 
-        var store = Ext.create('BintoTouch.store.Foods');
-        store.load();
+        //var store = Ext.create('BintoTouch.store.Foods');
+        var store = Ext.getStore('Foods');
+        store.load({
+            callback: function(records, operation, success) {
+                var url = store.getAt(0).getData().image_code.url;
+                this.getFoodImg().src = "http://binto.codedeck.com" + url;
+                this.getResultView().refresh();
+            },
+            scope: this
+        });
     }
 });
