@@ -12,6 +12,7 @@ Ext.define('BintoTouch.view.Main', {
         },{
             xtype: 'addlist'
         },{
+            disabled: true,
             xtype: 'userlist'
         }]
     }
