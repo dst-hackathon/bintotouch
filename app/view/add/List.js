@@ -1,6 +1,13 @@
 Ext.define('BintoTouch.view.add.List', {
     extend: 'Ext.Container',
     alias: 'widget.addlist',
+	xtype: 'addView',
+	
+    requires: [
+        'Ext.Button',
+        'Ext.ux.Fileup'
+    ],
+	
     config: {
         title: 'Add',
         iconCls: 'add',
@@ -49,28 +56,39 @@ Ext.define('BintoTouch.view.add.List', {
 				align: 'center'
 			},
 			items:[
-						{
-							xtype: 'button',
-							text: 'Browse Image',
-							margin: '0 20'
-						},
-						{
-							xtype: 'button',
-							text: 'Upload Image',
-							margin: '0 20'
+					{
+			            itemId: 'fileLoadBtn',
+			            xtype: 'fileupload',
+						margin: '0 20',
+			            autoUpload: true,
+			            loadAsDataUrl: true,
+			            states: {
+			            	browse: {
+								text: 'Browse and load'
+			                },
+			                ready: {
+			                	text: 'Load'
+			                },
+							uploading: {
+			                	text: 'Loading',
+			                    loading: true
+			                }
 						}
-			]
+					},
+					{
+						xtype: 'button',
+						text: 'Upload Image',
+						margin: '0 20'
+					}
+				]
+		},
+		{
+				itemId: 'loadedImage',
+			    xtype: 'img',
+			    width: '80%',
+			    height: '100px',
+			    style: 'margin-top:15px;'
 		}
-		// {
-		//             xtype: 'toolbar',
-		//             docked: 'top',
-		//             ui: 'light',
-		//             items: [{
-		//                 xtype: 'searchfield',
-		//                 placeHolder: 'Search by keywords...',
-		// 		flex: 1
-		//             }]
-		//         },
 		]           
     }
 });

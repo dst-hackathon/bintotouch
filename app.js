@@ -15,7 +15,8 @@
 
 //<debug>
 Ext.Loader.setPath({
-    'Ext': 'touch/src'
+    'Ext': 'touch/src',
+    'Ext.ux': 'ux'
 });
 //</debug>
 
@@ -34,7 +35,8 @@ Ext.application({
         'Food'
     ],
     controllers: [
-        'Foods'
+        'Foods',
+		'Add'
     ],
 
     views: [
