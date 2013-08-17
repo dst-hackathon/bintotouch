@@ -7016,4 +7016,12 @@ body.x-desktop {
 
 .randomBt{
 	margin: 0.75em 0.75em;
+	font-family: 'Lilita One', cursive;
+    font-size: 20px;
+}
+
+.resName{
+	font-family: 'Lilita One', cursive;
+	font-size: 20px;
+	text-align: 'center';
 }

@@ -32,7 +32,11 @@ Ext.application({
 
     views: [
         'Main',
-        'Result'
+        'Result',
+        'search.List',
+        'user.List',
+        'result.List',
+        'add.List'
     ],
 
     models: [
