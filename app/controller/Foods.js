@@ -26,8 +26,7 @@ Ext.define('BintoTouch.controller.Foods', {
 
     doRandom: function() {
     	console.log('Random');
-        this.getRandomButton().show({type :"slide",direction : "down", duration : 500});
-        this.getResultPanel().show({type :"slide",direction : "down", duration : 500});
+        this.getResultPanel().show({type :"fadeIn",direction : "down", duration : 500});
 
         //var store = Ext.create('BintoTouch.store.Foods');
         var store = Ext.getStore('Foods');
