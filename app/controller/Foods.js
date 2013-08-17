@@ -45,8 +45,6 @@ Ext.define('BintoTouch.controller.Foods', {
                 }
                 if (Ext.isEmpty(price)){
                     price = ' ';
-                }else{
-                    price = price + ' <b>Baht';
                 }
                 
                 this.getFoodImage().removeAll();
