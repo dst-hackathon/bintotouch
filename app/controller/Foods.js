@@ -32,7 +32,7 @@ Ext.define('BintoTouch.controller.Foods', {
         var store = Ext.getStore('Foods');
         store.load({
             callback: function(records, operation, success) {
-                var url = "http://binto.codedeck.com" + store.getAt(0).getData().image_code.url;
+                var url = "http://binto.codedeck.com" + store.getAt(0).getData().image_code;
                 console.log('url', url);
                 var resName = store.getAt(0).getData().name;
                 var price = store.getAt(0).getData().price;

@@ -4,7 +4,7 @@ Ext.define('BintoTouch.model.Food', {
     config: {
         fields: [
             { name: 'id', type: 'int' },
-            { name: 'image_code', type: 'object'},
+            { name: 'image_code', type: 'string'},
             { name: 'name', type: 'string' },
             { name: 'price', type: 'string' }
         ]
