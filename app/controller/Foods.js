@@ -58,13 +58,13 @@ Ext.define('BintoTouch.controller.Foods', {
                 this.getFoodDetails().removeAll();
                 this.getFoodDetails().add({
                     html: '<b>Dish name : ' + Ext.String.htmlEncode(dish),
-                    cls: 'resName'
+                    cls: 'dishStyle'
                 },{
                     html: '<b>Price : ' + Ext.String.htmlEncode(price),
-                    cls: 'resName'
+                    cls: 'priceStyle'
                 },{
                     html: '<b>Restaurant : ' + Ext.String.htmlEncode(resName),
-                    cls: 'resName'
+                    cls: 'resStyle'
                 });
                 
             },
