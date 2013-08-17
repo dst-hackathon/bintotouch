@@ -26,6 +26,13 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
+    stores: [
+        'Foods'
+    ],
+    
+    models: [
+        'Food'
+    ],
     controllers: [
         'Foods'
     ],
@@ -33,19 +40,13 @@ Ext.application({
     views: [
         'Main',
         'Result',
-        'search.List',
         'user.List',
         'result.List',
         'add.List'
     ],
 
-    models: [
-        'Food'
-    ],
 
-    stores: [
-        'Foods'
-    ],
+
 
     icon: {
         '57': 'resources/icons/Icon.png',

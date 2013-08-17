@@ -5,7 +5,7 @@ Ext.define('BintoTouch.store.Foods', {
         model: 'BintoTouch.model.Food',
         proxy: {
             type: 'ajax',
-            url : 'suggest.json'
+            url : 'suggest.json',
         }
     },
 });

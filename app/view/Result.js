@@ -6,7 +6,6 @@ Ext.define('BintoTouch.view.Result', {
     ],
 
     config: {
-        itemId: 'resultView',
         store: 'Foods',
 
         layout: {
@@ -18,16 +17,7 @@ Ext.define('BintoTouch.view.Result', {
         items: [
             {
                 xtype: 'panel',
-                id: 'foodImage',
-                
-                items: [
-                    {
-                        xtype: 'image',
-                        src: 'http://binto.codedeck.com/uploads/dish/image_code/1/994322_10151692928931475_1595007416_n.jpg',
-                        mode: 'image',
-                        width: '100%'
-                    }
-                ] 
+                id: 'foodImage'
             },
             {
                 xtype: 'panel',

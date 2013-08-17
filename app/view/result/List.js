@@ -21,16 +21,16 @@ Ext.define('BintoTouch.view.result.List', {
                         xtype: 'titlebar',
                         title: 'Binto'
                     },
-                    {
-			            xtype: 'toolbar',
-			            docked: 'top',
-			            ui: 'light',
-			            items: [{
-			                xtype: 'searchfield',
-			                placeHolder: 'Search by keywords...',
-			                flex: 1
-			            }]
-			        },
+           //          {
+			        //     xtype: 'toolbar',
+			        //     docked: 'top',
+			        //     ui: 'light',
+			        //     items: [{
+			        //         xtype: 'searchfield',
+			        //         placeHolder: 'Search by keywords...',
+			        //         flex: 1
+			        //     }]
+			        // },
                     {
                         xtype: 'result',
                         id: 'resultPanel',
