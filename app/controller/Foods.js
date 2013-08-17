@@ -36,7 +36,7 @@ Ext.define('BintoTouch.controller.Foods', {
                 console.log('url', url);
                 // this.getFoodDetails().items.get(0)._html = 'haaaaaaaaaaaa';
                 // console.log('panel', this.getFoodDetails().items.get(0)._html);
-                this.getFoodImage().remove();
+                this.getFoodImage().removeAll();
                 this.getFoodImage().add({
                     xtype: 'image',
                     src: url,
