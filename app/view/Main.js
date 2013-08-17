@@ -34,9 +34,12 @@ Ext.define('BintoTouch.view.Main', {
                         hidden: true
                     },
                     {
+                        docked: 'bottom',
                         xtype: 'button',
                         text: 'Random',
-                        id: 'randomButton'
+                        id: 'randomButton',
+                        ui: 'confirm-round',
+                        cls: 'randomBt'
                     }
                 ]
             },
